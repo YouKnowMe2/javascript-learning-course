@@ -1,8 +1,5 @@
-let greetingText = "Hi, My Name is Abir!";
-let num =32;
-alert(greetingText);
-alert(greetingText);
-greetingText = "Hi,I am really Abir!";
-alert(greetingText);
-alert(num);
-
+let age =21;
+let userName = "Abir";
+let hobbies = [age, userName];
+let job = { title:'Developer' ,place:'Bangladesh', salary: 3445};
+alert(hobbies[1]);
