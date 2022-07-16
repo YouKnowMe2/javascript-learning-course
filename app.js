@@ -17,12 +17,12 @@ function calculateAdultYear(userAge){
 }
 
 totalAdultYear = calculateAdultYear(age);
-alert(totalAdultYear);
+console.log(totalAdultYear);
 
 let person = {
         name: 'Abir',//property
         greet(){ //method
-            alert('Hello');
+            console.log('Hello');
         }
 };
 

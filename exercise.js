@@ -6,9 +6,9 @@
 let name='javascript',price=5,goal= ['Learning Javascipt','Becoming a expert','Mastering Javascript'];
 
 //2) Output ("alert") the three variable values
-alert(name);
-alert(price);
-alert(goal);
+console.log(name);
+console.log(price);
+console.log(goal);
 
 //3) Try "grouping" the three variables together and still output their values thereafter
 
@@ -19,13 +19,13 @@ let course = {
 
 }
 
-alert(course.name);
-alert(course.price);
-alert(course.goal);
+console.log(course.name);
+console.log(course.price);
+console.log(course.goal);
 
 //4)Also output the second element in your "main goals" variable
 
-alert(goal[1]);
+console.log(goal[1]);
 
 //5) Add a custom command that does the following:
 //    - Use your "main goals" variable and access an element by its identifier
@@ -41,4 +41,4 @@ function show(list,id){
 
 // 6) Execute your custom command from (5) and output ("alert") the result
 
-alert(show(course.goal,1));
+console.log(show(course.goal,1));
