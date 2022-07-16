@@ -20,4 +20,11 @@ result *=5; //result =result*5;
 
 console.log(result);
 
+console.log("Abir" +' ' + "Chowdhury"); //only (+) can be used
 
+let userName2 = 'Abir';
+console.log(userName2.length);
+console.log(userName2.toUpperCase());
+
+let hobbies2 = ['Sports','Cooking'];
+console.log(hobbies2.length);
