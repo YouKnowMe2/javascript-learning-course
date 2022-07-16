@@ -6,7 +6,8 @@ let job = {
     place:'Bangladesh',
     salary: 3445
 };
-
-age=32;
-let adultYear = age - 18;
+function find(age){
+    return age-18;
+}
+let adultYear = find(age);
 alert(adultYear);
