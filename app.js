@@ -36,3 +36,7 @@ firstH1Element.remove();
 //Move ELements
 
 firstParagraph.parentElement.append(firstParagraph);
+
+//innerHtml
+
+firstParagraph.innerHTML = 'This is <strong>Abir</strong>';
