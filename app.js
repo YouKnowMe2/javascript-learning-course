@@ -1,16 +1,22 @@
-let paragraphElement = document.querySelector('p');
-function changeParagraphpText(){
-        paragraphElement.textContent='Clicked';
+let wordName = document.getElementById('product-name');
+let remainingCharsElement = document.getElementById('remaining-chars');
+
+let maxAllowedChars = wordName.maxLength;
+function numberReamin(event)
+{
+
+    let enteredtext = event.target.value;
+    let enteredTextLength = enteredtext.length;
+    let remainingCharacters = maxAllowedChars -enteredTextLength;
+    remainingCharsElement.textContent = remainingCharacters;
+    if(remainingCharacters<=10){
+       remainingCharsElement.className = 'warning';
+       wordName.className = 'warning';
+    }else{
+        remainingCharsElement.className = '';
+        wordName.className = '';
+    }
+
 }
-paragraphElement.addEventListener('click',changeParagraphpText);
 
-
-
-let inputElement = document.querySelector('input');
-function detectText(event){
-    console.log(inputElement.value);//using document to get all data
-    console.log(event.target.value);//event to get all data
-    console.log(event.data);//event to single data
-
-}
-inputElement.addEventListener('input',detectText);
+wordName.addEventListener('input',numberReamin);
