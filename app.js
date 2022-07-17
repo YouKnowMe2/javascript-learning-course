@@ -7,7 +7,10 @@ paragraphElement.addEventListener('click',changeParagraphpText);
 
 
 let inputElement = document.querySelector('input');
-function detectText(){
-    console.log(inputElement.value);
+function detectText(event){
+    console.log(inputElement.value);//using document to get all data
+    console.log(event.target.value);//event to get all data
+    console.log(event.data);//event to single data
+
 }
 inputElement.addEventListener('input',detectText);
