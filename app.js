@@ -23,3 +23,12 @@ let firstParagraph = document.querySelector('p');
 //3.Insert the new element into the parent element content
 
 firstParagraph.append(newAnchorElement);
+
+//Remove Element
+
+//1.Select the element that should be removed
+let firstH1Element = document.querySelector('h1');
+
+//2. Remove it
+
+firstH1Element.remove();
