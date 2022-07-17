@@ -10,11 +10,11 @@ function numberReamin(event)
     let remainingCharacters = maxAllowedChars -enteredTextLength;
     remainingCharsElement.textContent = remainingCharacters;
     if(remainingCharacters<=10){
-       remainingCharsElement.className = 'warning';
-       wordName.className = 'warning';
+       remainingCharsElement.classList.add('warning');
+       wordName.classList.add('warning');
     }else{
-        remainingCharsElement.className = '';
-        wordName.className = '';
+        remainingCharsElement.classList.remove('warning');
+        wordName.classList.remove('warning');
     }
 
 }
