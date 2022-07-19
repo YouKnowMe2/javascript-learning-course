@@ -62,3 +62,31 @@ function deriveNumberOfDiceRolls(){
     outputTotalRolls.textContent=numberOfRolls;
 }
 rollDiceButtonElement.addEventListener('click',deriveNumberOfDiceRolls);
+
+
+//calculate the sum
+
+let calculateButtonElement = document.querySelector('#calculator button');
+let givenNumber = document.getElementById('user-number');
+let answerOfSum = document.getElementById('calculated-sum');
+let sum =0;
+
+function calculateSum(){
+    let gotValue = givenNumber.value;
+    console.log(gotValue);
+    for(let i=0;i<=gotValue;i++){
+        sum = sum +i;
+    }
+     answerOfSum.innerHTML= sum;
+     answerOfSum.style = "display: block";
+     sum=0;
+
+}
+
+calculateButtonElement.addEventListener('click',calculateSum);
+
+
+
+
+
+
