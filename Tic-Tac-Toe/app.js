@@ -23,10 +23,13 @@ const backDropElement = document.getElementById('backdrop');
 const formElement = document.querySelector('form');
 const errorElement = document.getElementById('config-error');
 const activePlayerNameElement = document.getElementById('active-player-name');
+const gameOverElement = document.getElementById('game-over');
+
 
 const startGameElement = document.getElementById('start-game');
 const gameAreaElement = document.getElementById('active-game');
 const gameFieldElements  = document.querySelectorAll('#game-board li');
+const gameBoard  = document.getElementById('game-board');
 
 
 const editPlayer1Element = document.getElementById('edit-player-1');

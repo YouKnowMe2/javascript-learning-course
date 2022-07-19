@@ -13,10 +13,12 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     border-radius: 4px;
     display: none;
+    color: rgb(50,5,87);
 }
 #game-over h2{
     font-size: 3rem;
     margin: 0.5rem 0;
+    color: rgb(50,5,87);
 
 }
 
