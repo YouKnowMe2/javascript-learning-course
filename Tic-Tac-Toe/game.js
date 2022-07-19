@@ -16,8 +16,19 @@ function switchPlayer(){
 }
 
 function selectGameField(event){
-    event.target.textContent = players[activePlayer].symbol;
-    event.target.classList.add('disabled');
+    const selectedField = event.target;
+    const selectedColoum = selectedField.dataset.col -1;
+    const selectedRow = selectedField.dataset.row -1;
+
+    if(gameData[selectedRow][selectedColoum] >0){
+        alert('Please select an empty field');
+        return;
+    }
+    selectedField.textContent = players[activePlayer].symbol;
+    selectedField.classList.add('disabled');
+
+    gameData[selectedRow][selectedColoum] = activePlayer+1;
+    console.log(gameData);
     switchPlayer();
     //finding the clicked field
 }
