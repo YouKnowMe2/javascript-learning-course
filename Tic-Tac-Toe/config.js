@@ -1,6 +1,6 @@
 function openPlayerConfig(event){
         const selectedPlayer = +event.target.dataset.playerid;
-        editedPlayer= selectedPlayer;
+        editedPlayer = selectedPlayer;
         playerConfigElement.style.display = 'block';
         backDropElement.style.display = 'block';
 }
